@@ -7,7 +7,7 @@ let result1 = number.reduce((acc, curr, i) => {
     // console.log(curr);
     // console.log(i);
     // console.log(acc, curr, i);
-    return acc + curr
+    return acc + curr;
 }, 0)
 
 // console.log(result1);
@@ -48,34 +48,34 @@ const friends = [
 let result3 = friends.reduce((acc, curr) => {
     // console.log(acc);
     // console.log(curr);
-    return acc + curr.age
+    return acc + curr.age;
 }, 0)
 // console.log(result3);
 
 // 4. map 처럼 활용
 const numbersReduce = number.reduce((acc, curr) => {
-    acc.push(curr*2)
-    return acc
+    acc.push(curr*2);
+    return acc;
 }, [])
 
 // console.log(numbersReduce);
 
 const oneTwoThree = number.reduce((acc, curr) => {
-    acc.push(curr % 2 ? '짝수' : '홀수')
-    return acc
+    acc.push(curr % 2 ? '짝수' : '홀수');
+    return acc;
 }, [])
 
 // console.log(oneTwoThree);
 
 // 5. filter 처럼 활용
-const fruits = ['Apple', 'Banana', 'Lemon', 'Watermelon']
+const fruits = ['Apple', 'Banana', 'Lemon', 'Watermelon'];
 
 const filterReduce = fruits.reduce((acc, curr) => {
     // acc.push(curr.length > 5)
     if (curr.length > 5) {
-        acc.push(curr)
+        acc.push(curr);
     }
-    return acc
+    return acc;
 }, [])
 
 // console.log(filterReduce);
@@ -84,9 +84,9 @@ const filterReduce = fruits.reduce((acc, curr) => {
 const arr = [4, 15, 377, 395, 400, 1024, 3000, 1121]
 const findReduce = arr.reduce((acc, curr) => {
     if (typeof acc == 'undefined' && curr % 5 == 0) {
-        acc = curr
+        acc = curr;
     }
-    return acc
+    return acc;
 }, undefined)
 
 console.log(findReduce);
