@@ -19,11 +19,10 @@ function sumResult(acc, curr) {
 }
 
 let result2 = number.reduce(sumResult)
-// console.log(result2);
+console.log(result2);
 
 
 // 3. object 배열에서 원하는 항목의 값만 더하기
-
 const friends = [
     {        
         name: '최영우',
