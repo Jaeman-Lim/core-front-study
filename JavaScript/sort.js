@@ -4,7 +4,7 @@ fruit.sort();
 console.log(fruit);
 
 // 숫자 정렬
-let score = [4, 11, 2, 10, 3, 1];
+let score = [4, 11, 2, 10, 3, 1, 5];
 
 /**
  * 오름차순 메커니즘
