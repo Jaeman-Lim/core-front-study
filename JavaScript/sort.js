@@ -14,9 +14,9 @@ score.sort(function(a, b) {
 
 //숫자 정렬(함수형)
 score.sort(function(a, b) {
-   if (a > b) return 1;
-   if (a == b) return 0;
-   if (a < b) return -1;
+    if (a > b) return 1;
+    if (a == b) return 0;
+    if (a < b) return -1;
 });
 // console.log(score);
 
