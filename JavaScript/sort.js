@@ -46,3 +46,14 @@ student.sort(function(a, b) {
 //내림차순
 console.log(student);
 
+
+const arr = ['banana', 'b', 'Boy'];
+
+arr.sort(function(a, b) {
+    const upperCaseA = a.toUpperCase();
+    const upperCaseB = b.toUpperCase();
+
+    if(upperCaseA > upperCaseB) return 1;
+    if(upperCaseA < upperCaseB) return -1;
+    if(upperCaseA === upperCaseB) return 0;
+});
