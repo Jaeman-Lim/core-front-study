@@ -8,7 +8,7 @@ let result1 = number.reduce((acc, curr, i) => {
     // console.log(i);
     // console.log(acc, curr, i);
     return acc + curr;
-}, 0)
+}, 0);
 
 // console.log(result1);
 
@@ -48,21 +48,21 @@ let result3 = friends.reduce((acc, curr) => {
     // console.log(acc);
     // console.log(curr);
     return acc + curr.age;
-}, 0)
+}, 0);
 // console.log(result3);
 
 // 4. map 처럼 활용
 const numbersReduce = number.reduce((acc, curr) => {
     acc.push(curr*2);
     return acc;
-}, [])
+}, []);
 
 // console.log(numbersReduce);
 
 const oneTwoThree = number.reduce((acc, curr) => {
     acc.push(curr % 2 ? '짝수' : '홀수');
     return acc;
-}, [])
+}, []);
 
 // console.log(oneTwoThree);
 
@@ -75,7 +75,7 @@ const filterReduce = fruits.reduce((acc, curr) => {
         acc.push(curr);
     }
     return acc;
-}, [])
+}, []);
 
 // console.log(filterReduce);
 
@@ -86,6 +86,6 @@ const findReduce = arr.reduce((acc, curr) => {
         acc = curr;
     }
     return acc;
-}, undefined)
+}, undefined);
 
 console.log(findReduce);
