@@ -80,7 +80,7 @@ const filterReduce = fruits.reduce((acc, curr) => {
 // console.log(filterReduce);
 
 // 6. find 처럼 활용
-const arr = [4, 15, 377, 395, 400, 1024, 3000, 1121]
+const arr = [4, 15, 377, 395, 400, 1024, 3000, 1121, 2326]
 const findReduce = arr.reduce((acc, curr) => {
     if (typeof acc == 'undefined' && curr % 5 == 0) {
         acc = curr;
