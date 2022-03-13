@@ -20,7 +20,7 @@ score.sort(function(a, b) {
 // 내림차순
 score.sort(function(a, b) {
     return b-a;
-})
+});
 
 //숫자 정렬(함수형)
 
@@ -35,7 +35,7 @@ score.sort(function(a, b) {
     if (a < b) return 1;
     if (a == b) return 0;
     if (a > b) return -1;
-})
+});
 
 console.log(score);
 
@@ -50,10 +50,10 @@ let student = [
 // 이름순으로 정렬
 student.sort(function(a, b) {
     return a.name < b.name ? -1 : a.name > b.name ? 1 : 0   //오름차순
-})
+});
 student.sort(function(a, b) {
     return a.name > b.name ? -1 : a.name < b.name ? 1 : 0   //내림차순
-})
+});
 console.log(student);
 
 //나이순으로 정렬
@@ -61,7 +61,7 @@ student.sort(function(a, b) {
     if (a.age > b.age) return -1
     if (a.age == b.age) return 0
     if (a.age < b.age) return 1
-})
+});
 
 console.log(student);
 
