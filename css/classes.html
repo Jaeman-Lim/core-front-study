@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+      span {
+        background-color: teal;
+      }
+      .tomato {
+        background-color: tomato;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .teal {
+        background-color: teal;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .btn {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+    </style>
+    <!-- 
+        1. span은 inline이기 때문에 높이와 너비를 가질 수 없으며, 그래서 위, 아래에 margin을 가질 수 없다.
+        2. padding은 사방에 가질 수 있다.
+        3. margin을 위, 아래에 적용하고 싶다면, inline 요소를 block으로 변경 해야 된다.
+        4. .class명 {} 으로 선언 한다.
+        5. class명은 유일할 필요가 없다. 여러 요소들이 같이 쓸 수 있다.
+     -->
+  </head>
+  <body>
+    <div>
+      <span class="btn tomato">hello</span>
+      <span class="btn teal">hello</span>
+      <span class="btn tomato">hello</span>
+      <span class="btn teal">hello</span>
+      <span class="btn tomato">hello</span>
+      <span class="btn teal">hello</span>
+      <span class="btn tomato">hello</span>
+    </div>
+  </body>
+</html>
