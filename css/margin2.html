@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: tomato;
+      }
+      div {
+        margin: 30px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+        background-color: whitesmoke;
+      }
+      body {
+        margin: 50px 5px 12px 9px;
+        background-color: thistle;
+      }
+    </style>
+    <!-- 
+    margin 값 방향
+    1. 방향없이 margin 값 주면(value가 하나) -> 사방에 다 적용이 된다.(위, 아래, 오른쪽, 왼쪽)
+    2. margin에 value를 두개 주게 되면 그것은 상하, 좌우 이다.
+    3. margin에 value를 네개 주게 된다면 시계방향 순으로 적용된다. (상, 우, 하, 좌)
+    4. Collapsing margin (상하 에서만 발생)
+        body 안에 div의 상하 margin 값이 body의 마진과 만나면 둘 중 큰 값의 margin 값으로 body에 적용 된다.
+     -->
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
