@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        border: 2px dashed black;
+      }
+      html {
+        background-color: tomato;
+      }
+      body {
+        margin: 20px;
+        padding: 20px 10px;
+        background-color: thistle;
+      }
+      div {
+        /* margin: 50px 15px; */
+        padding: 20px;
+        /* height: 150px; */
+        /* border: 2px solid black; */
+      }
+      span {
+        border-style: dotted;
+      }
+      #first {
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+      }
+      #second {
+        background-color: teal;
+        width: 100px;
+        height: 100px;
+      }
+      #third {
+        background-color: wheat;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+    <!-- 
+        border은 inline과 block 모두에 적용된다.
+     -->
+  </head>
+  <body>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <span>hello</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
