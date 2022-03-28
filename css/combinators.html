@@ -11,20 +11,29 @@
         margin: 50px;
       }
       span {
-        color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
       }
-      div p span {
-        color: blueviolet;
+      div > span {
+        margin: 0px 10px;
+        /* text-decoration: underline; */
+      }
+      p span {
+        color: white;
+      }
+      p + span {
+        text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <div>
-      <span>hello</span>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod commodi e
         sequi ipsam odio dolorem. <span>inside</span>
       </p>
+      <span>hello</span>
     </div>
   </body>
 </html>
