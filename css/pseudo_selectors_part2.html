@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 1000vh;
+        margin: 50px;
+      }
+      input {
+        border: 1px solid wheat;
+      }
+      input:required {
+        border-color: tomato;
+      }
+      input[placeholder*="name"] {
+        background-color: thistle;
+      }
+    </style>
+    <!-- 
+      - "~"는 span이 p의 형제인다, 바로 뒤에 오지 않을 때 쓸 수 있다.
+      * Attribute Selectors (특성 선택자)
+      - 그냥 input과 required input이 있다면, input:required{}를 통해서, required input에만
+      속성을 적용시킬 수 있다.
+      - input{} 을 통해, [input 이름]에 해당하는 input 속성을 따로 줄 수 있다.
+      여기서, input[placeholder="First name"]은 First name에만 속성을 주지만, input[placeholder~="name"]은 
+      name이 들어가는 모든 input에 속성을 부여할 수 있다.
+      - "~="은 name을 포함하고 있다는 의미가 되는 것이다.
+      - a[href$=".org"] → "$="는 ".org"로 끝나는 모든 anchor를 선택할 수 있다.
+      - attribute selectors를 이용하면, class를 지정할 필요 없이 CSS만으로 각각의 속성을 부여해줄 수 있다.
+     -->
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
+    </div>
+  </body>
+</html>
